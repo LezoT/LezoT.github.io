@@ -1,0 +1,146 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+  
+  }
+
+div.mini-nav{
+    height: 80px;
+    background-color: #333D51;
+    text-align: center;
+    
+  }
+  
+  .mini-nav ul {
+    display: inline-flex;
+    font-family: 'Balsamiq Sans', cursive;
+    list-style: none;
+    color: #F7AB09;
+    margin: 5px;
+    font-size: large;
+  }
+
+  .mini-nav ul li{
+    margin: auto;
+    padding: 20px 50px;
+  }
+  
+  .mini-nav-a{
+  color: #F7AB09;
+  font-family: 'Balsamiq Sans', cursive;
+  text-decoration: none;
+  font-size: x-large;
+  }
+  
+  .second-mini-nav-a{
+    color: #f8d68c;
+    font-family: 'Cormorant Garamond', serif;
+  text-decoration: none;
+  font-size: x-large;
+  }
+  .sub-menu-1{
+    display: none;
+    
+    
+  }
+  .sub-menu-1 ul li{
+    float: left;
+    
+    
+  }
+  .mini-nav ul li:hover .sub-menu-1{
+    display: block;
+    position: absolute;
+    background: #333D51;
+    margin: auto;
+   
+  }
+  
+  .mini-nav ul li:hover .sub-menu-1 ul{
+   display: block;
+  
+  }
+
+  a.second-mini-nav-a:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: relative;
+    background: #f8d68c;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  
+  a.second-mini-nav-a:hover:after{
+    width: 100%; 
+    left: 0; 
+  }
+  
+  a.mini-nav-a:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: relative;
+    background: #F7AB09;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  
+  a.mini-nav-a:hover:after{
+    width: 100%; 
+    left: 0; 
+  }
+  
+  a.button1{
+    display: inline-block;
+    padding: 0.35em 1.2em;
+    background-color: #333D51;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 0.12em;
+    box-sizing: border-box;
+    text-decoration: none;
+
+    font-weight: 900;
+    color: #F7AB09;;
+    text-align: center;
+    
+    transition: all 0.2s;
+    width: 500px;
+    max-width: 500px;
+    padding: 30px;
+    margin: 8em 5em;
+   
+  }
+
+  a.button1:hover {
+    color: #333D51;
+    background-color: #F7AB09;
+  }
+
+
+  div.something{
+    text-align: center;
+  }
+
+@media only screen and  (max-width:30em){
+  a.button1{
+    display: block;
+    margin: 0.4 auto;
+  }
+}
+
+
